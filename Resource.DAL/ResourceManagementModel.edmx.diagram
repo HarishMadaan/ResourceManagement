@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="b401aa9ffcbd48f585205c1497be0ae3" Name="Diagram1" ZoomLevel="91">
+        <EntityTypeShape EntityType="ResourceManagementModel.tblMemberSkillAssociation" Width="1.5" PointX="7.125" PointY="0.75" />
+        <EntityTypeShape EntityType="ResourceManagementModel.tblUserTypeMaster" Width="1.5" PointX="2.75" PointY="0.875" />
+        <EntityTypeShape EntityType="ResourceManagementModel.tblMember" Width="1.5" PointX="5" PointY="0.75" />
+        <EntityTypeShape EntityType="ResourceManagementModel.tblProject" Width="1.5" PointX="3" PointY="3.875" />
+        <AssociationConnector Association="ResourceManagementModel.FK_tblMember_tblUserTypeMaster" />
+        <AssociationConnector Association="ResourceManagementModel.FK_tblMemberSkillAssociation_tblMember" />
+        <EntityTypeShape EntityType="ResourceManagementModel.tblApplicationUser" Width="1.5" PointX="8.375" PointY="3.875" />
+        <AssociationConnector Association="ResourceManagementModel.FK_tblApplicationUser_tblMember" />
+        <AssociationConnector Association="ResourceManagementModel.FK_tblApplicationUser_tblUserTypeMaster" />
+        <EntityTypeShape EntityType="ResourceManagementModel.tblComment" Width="1.5" PointX="11.375" PointY="5" />
+        <AssociationConnector Association="ResourceManagementModel.FK_tblComment_tblMember" />
+        <EntityTypeShape EntityType="ResourceManagementModel.tblProjectSprint" Width="1.5" PointX="0.75" PointY="0.75" />
+        <AssociationConnector Association="ResourceManagementModel.FK_tblComment_tblProjectSprint" />
+        <EntityTypeShape EntityType="ResourceManagementModel.tblSkill" Width="1.5" PointX="9.375" PointY="0.75" />
+        <AssociationConnector Association="ResourceManagementModel.FK_tblMemberSkillAssociation_tblSkill" />
+        <EntityTypeShape EntityType="ResourceManagementModel.tblSprintMemberAssociation" Width="1.5" PointX="11.375" PointY="0.875" />
+        <AssociationConnector Association="ResourceManagementModel.FK_tblSprintMemberAssociation_tblMember" />
+        <AssociationConnector Association="ResourceManagementModel.FK_tblSprintMemberAssociation_tblProjectSprint" />
+        <EntityTypeShape EntityType="ResourceManagementModel.tblProjectMemberAssociation" Width="1.5" PointX="0.5" PointY="5.125" />
+        <AssociationConnector Association="ResourceManagementModel.FK_tblProjectMemberAssociation_tblMember" />
+        <AssociationConnector Association="ResourceManagementModel.FK_tblProjectMemberAssociation_tblProject" />
+        </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
